@@ -102,7 +102,7 @@ place_types:
 
       - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/new/dot-7fccd9.png
+          iconUrl: /static/css/images/markers/new/dot-0f779e.png
           iconSize: [15, 15]
           iconAnchor: [8, 8]
       - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'  
@@ -144,7 +144,7 @@ place_types:
 
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/new/dot-55a504.png
+          iconUrl: /static/css/images/markers/new/dot-7fccd9.png
           iconSize: [15, 15]
           iconAnchor: [8, 8]
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'  
@@ -186,7 +186,7 @@ place_types:
 
       - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
-          iconUrl: /static/css/images/markers/new/dot-fa5b13.png
+          iconUrl: /static/css/images/markers/new/dot-55a504.png
           iconSize: [15, 15]
           iconAnchor: [8, 8]
       - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} >= 14 && {{map.zoom}} < 17'  
@@ -605,15 +605,11 @@ place:
       options:
         - label: _(Please choose...)
           value:
-        - label: _(Culture & Community Facilities)
+        - label: _(Arts, Culture & Education)
           value: culture
-        - label: _(Education)
-          value: education
-        - label: _(Environment)
-          value: environment
         - label: _(Parks & Recreation)
           value: parks
-        - label: _(Public Health & Safety)
+        - label: _(Public Health, Safety & Environment)
           value: health
         - label: _(Streets & Sidewalks)
           value: streets
