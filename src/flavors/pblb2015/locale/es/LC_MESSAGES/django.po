@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Frank Hebbert <frank@openplans.org>, 2014
 # PB Project <frank+pbproject@openplans.org>, 2014
@@ -523,7 +523,7 @@ msgstr "Comunícate con nosotros"
 #: flavors/pblb/jstemplates/pages/involved.html:6
 msgid ""
 "Discuss your ideas in person with your friends and neighbors at a District 9"
-" Neighborhood Assembly! "
+" Neighborhood Assembly!"
 msgstr "Conversa sobre tus ideas en persona con tus amigos y vecinos en la asamblea de vecinos del distrito 9."
 
 #: flavors/pblb/jstemplates/pages/involved.html:7
@@ -555,7 +555,7 @@ msgstr "Regístrate aquí"
 msgid ""
 "There are lots of ways to get involved in PB Long Beach! You can help to get"
 " the word out to underserved communities, facilitate small group meetings, "
-"help translate materials, or design flyers. "
+"help translate materials, or design flyers."
 msgstr "¡Hay muchas formas de participar en PB Long Beach! Puedes ayudar a correr la voz en comunidades marginadas, facilitar reuniones en pequeños grupos, ayudar a traducir materiales y diseñar volantes (\"flyers\")."
 
 #: flavors/pblb/jstemplates/pages/involved.html:13
