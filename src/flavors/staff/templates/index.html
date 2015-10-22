@@ -89,7 +89,8 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
   $approxAddress.html('<span class="address-label">Approximate location:</span> ' + Handlebars.templates['location-string'](locationData));
 }
     $(Shareabouts).on('panelshow', function(evt, app, path) {
-    var input = document.getElementById("place-source").focus();
+      var input = document.getElementById("place-source");
+      if (input) { input.focus(); }
     });
 
 </script>
@@ -97,7 +98,7 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
 <!-- zoom to marker on click -->
 <script>
   (function(NS, $) {
-    
+
     var originalOnMarkerClick = Shareabouts.LayerView.prototype.onMarkerClick;
     NS.LayerView.prototype.onMarkerClick = function(evt) {
       var self = this;
