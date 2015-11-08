@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="center">-118.1561,33.7981,11</Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"CouncilDistricts","description":"Long Beach Districts","fields":{"OBJECTID":"Number","COUNCIL_NU":"Number","POPULATION":"Number","RECORD_DAT":"String","REPRESENTA":"String","PHONE_NUMB":"String","SHAPE_AREA":"Number","SHAPE_LEN":"Number"}},{"id":"CouncilDistrictCentroids","description":"Council District Centroids","fields":{"OBJECTID":"Number","COUNCIL_NU":"Number","POPULATION":"Number","RECORD_DAT":"String","REPRESENTA":"String","PHONE_NUMB":"String","SHAPE_AREA":"Number","SHAPE_LEN":"Number"}}]}]]></Parameter>
+  <Parameter name="maxzoom">15</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="name"><![CDATA[Long Beach Districts 2015]]></Parameter>
+</Parameters>
+
+
+<Layer name="CouncilDistricts"
+  buffer-size="8"
+  srs="+proj=lcc +lat_1=34.03333333333333 +lat_2=35.46666666666667 +lat_0=33.5 +lon_0=-118 +x_0=2000000 +y_0=500000.0000000001 +datum=NAD83 +units=us-ft +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/shareabouts-pblongbeach/data/CouncilDistricts.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="CouncilDistrictCentroids"
+  buffer-size="8"
+  srs="+proj=lcc +lat_1=34.03333333333333 +lat_2=35.46666666666667 +lat_0=33.5 +lon_0=-118 +x_0=2000000 +y_0=500000.0000000002 +ellps=GRS80 +units=us-ft +no_defs">
+    
+    <Datasource>
+       <Parameter name="file"><![CDATA[/home/mjumbewu/Programming/poepublic/shareabouts-pblongbeach/data/CouncilDistrictCentroids.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>

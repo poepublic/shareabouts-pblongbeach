@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="rgba(0, 0, 0, 0)">
+
+<Parameters>
+  <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="center">15.293,50.8476,4</Parameter>
+  <Parameter name="description"><![CDATA[A monotone basemap that's easy to recolor.]]></Parameter>
+  <Parameter name="format">png8:m=h</Parameter>
+  <Parameter name="maxzoom">22</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="name"><![CDATA[Long Beach Districts Overlay]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///openplans.1c6424e1]]></Parameter>
+</Parameters>
+
+
+<Style name="CouncilDistricts-thick-border" filter-mode="first">
+  <Rule>
+    <Filter>([COUNCIL_NU] = 9)</Filter>
+    <LineSymbolizer stroke-width="10" stroke="#f1aa36" stroke-opacity="0.7" offset="0" comp-op="src" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([COUNCIL_NU] = 1)</Filter>
+    <LineSymbolizer stroke-width="10" stroke="#f1aa36" stroke-opacity="0.7" offset="0" comp-op="src" stroke-linejoin="round" />
+  </Rule>
+</Style>
+<Style name="CouncilDistricts-outer-border" filter-mode="first">
+  <Rule>
+    <Filter>([COUNCIL_NU] = 9)</Filter>
+    <PolygonSymbolizer comp-op="dst-out" />
+    <LineSymbolizer stroke-width="1" stroke="#000000" stroke-opacity="0.8" offset="5.5" comp-op="src" />
+  </Rule>
+  <Rule>
+    <Filter>([COUNCIL_NU] = 1)</Filter>
+    <PolygonSymbolizer comp-op="dst-out" />
+    <LineSymbolizer stroke-width="1" stroke="#000000" stroke-opacity="0.8" offset="5.5" comp-op="src" />
+  </Rule>
+</Style>
+<Style name="CouncilDistricts-outline" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke="#777777" stroke-width="1" comp-op="src" />
+  </Rule>
+</Style>
+<Style name="CouncilDistricts" filter-mode="first">
+  <Rule>
+    <PolygonSymbolizer fill="#bbbbbb" fill-opacity="0.3" />
+  </Rule>
+</Style>
+<Layer name="CouncilDistricts"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>CouncilDistricts</StyleName>
+    <StyleName>CouncilDistricts-outline</StyleName>
+    <StyleName>CouncilDistricts-outer-border</StyleName>
+    <StyleName>CouncilDistricts-thick-border</StyleName>  </Layer>
+
+<Style name="CouncilDistrictCentroids-center-label" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([COUNCIL_NU] = 9)</Filter>
+    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#bbbbbb" ><![CDATA[]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([COUNCIL_NU] = 9)</Filter>
+    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#bbbbbb" ><![CDATA['District '+[COUNCIL_NU]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([COUNCIL_NU] = 9)</Filter>
+    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#bbbbbb" ><![CDATA[[COUNCIL_NU]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([COUNCIL_NU] = 1)</Filter>
+    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#bbbbbb" ><![CDATA[]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([COUNCIL_NU] = 1)</Filter>
+    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#bbbbbb" ><![CDATA['District '+[COUNCIL_NU]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([COUNCIL_NU] = 1)</Filter>
+    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#bbbbbb" ><![CDATA[[COUNCIL_NU]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Layer name="CouncilDistrictCentroids"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>CouncilDistrictCentroids-center-label</StyleName>  </Layer>
+
+</Map>
