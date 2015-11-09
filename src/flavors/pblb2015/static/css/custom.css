@@ -419,3 +419,12 @@ p.checkbox + p.select {
     font-size: 0.875em;
   }
 }
+
+.district-representative {
+  text-transform: capitalize;
+}
+
+.district-display,
+.address-display {
+  font-weight: bold;
+}

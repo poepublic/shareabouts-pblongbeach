@@ -65,6 +65,10 @@
   Analytics, custom JS, and such go here
  -->
 {% block includes %}
+<script>Swag.registerHelpers(Handlebars);</script>
+
+{% include "_update_district_on_move.html" %}
+
 <script>
 var mapQuest_geocode = Shareabouts.Util.MapQuest.geocode;
 Shareabouts.Util.MapQuest.geocode = function(location, bounds, options) {
@@ -73,20 +77,6 @@ Shareabouts.Util.MapQuest.geocode = function(location, bounds, options) {
     location += ', Long Beach, CA'
   }
   return mapQuest_geocode.call(this, location, bounds, options);
-}
-
-var placeFormView_setLocation = Shareabouts.PlaceFormView.prototype.setLocation;
-Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
-  placeFormView_setLocation.call(this, locationData);
-
-  var $placeNameField = this.$('[name="name"]'),
-      $approxAddress = $placeNameField.next();
-
-  if ($approxAddress.length === 0) {
-    $approxAddress = $('<p class="approx-address"></p>').insertAfter($placeNameField);
-  }
-
-  $approxAddress.html('<span class="address-label">{% trans 'Approximate location:' %}</span> ' + Handlebars.templates['location-string'](locationData));
 }
 </script>
 
