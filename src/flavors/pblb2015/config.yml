@@ -25,10 +25,10 @@ map:
   geocode_field_label: _(Enter an address...)
   options:
     center:
-      lat: 33.7991
+      lat: 33.8121
       lng: -118.1559
-    zoom: 11
-    minZoom: 10
+    zoom: 12
+    minZoom: 11
     maxZoom: 18
   layers:
     - url: http://{s}.tiles.mapbox.com/v3/openplans.jlb70f57/{z}/{x}/{y}.png

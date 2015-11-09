@@ -24,7 +24,7 @@ maintain or invert existing value (light to dark) scale.
 
 @lborange: #F1AA36;
 
-Map { background-color: rgba(0,0,0,0,0.7); }
+Map { background-color: rgba(0,0,0,0.5); }
 
 /*
 By default, show council districts as lighter than the surrounding
@@ -56,19 +56,27 @@ and they should be surrounded by an orange semi-transparent border.
     line-width: 1;
     line-color: @fill4;
     line-opacity: 0.8;
-    line-offset: 5.5;
+    line-offset: 4.5;
     line-comp-op: src;
-  }
+
+    [zoom>13] {
+      line-offset: 5.5;
+    }
+}
 }
 #CouncilDistricts::thick-border {
   [COUNCIL_NU=9],
   [COUNCIL_NU=1] {
-    line-width: 10;
+    line-width: 8;
     line-color: @lborange;
     line-opacity: 0.7;
     line-offset: 0;
     line-comp-op: src;
     line-join: round;
+    
+    [zoom>13] {
+      line-width: 10;
+    }
   }
 }
 #CouncilDistrictCentroids::center-label {
