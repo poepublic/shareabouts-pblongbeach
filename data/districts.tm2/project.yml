@@ -1,6 +1,6 @@
 _prefs: 
   mapid: openplans.9df7605d
-  saveCenter: true
+  saveCenter: false
 _properties: 
   bridge: 
     "group-by": layer
