@@ -58,6 +58,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
+      - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} < 13'
+        style:
+          fillColor: '#aa3c1e'
+          fillOpacity: 0.5
+          stroke: false
+          radius: 3
       - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-aa3c1e.png
@@ -100,6 +106,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
+      - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} < 13'
+        style:
+          fillColor: '#0f779e'
+          fillOpacity: 0.5
+          stroke: false
+          radius: 3
       - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-0f779e.png
@@ -142,6 +154,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
+      - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} < 13'
+        style:
+          fillColor: '#7fccd9'
+          fillOpacity: 0.5
+          stroke: false
+          radius: 3
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-7fccd9.png
@@ -184,6 +202,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
+      - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} < 13'
+        style:
+          fillColor: '#55a504'
+          fillOpacity: 0.5
+          stroke: false
+          radius: 3
       - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-55a504.png
@@ -226,6 +250,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
+      - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} < 13'
+        style:
+          fillColor: '#ff78be'
+          fillOpacity: 0.5
+          stroke: false
+          radius: 3
       - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-ff78be.png
@@ -268,6 +298,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
+      - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false && {{map.zoom}} < 13'
+        style:
+          fillColor: '#c4ed52'
+          fillOpacity: 0.5
+          stroke: false
+          radius: 3
       - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-c4ed52.png
@@ -310,6 +346,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
+      - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false && {{map.zoom}} < 13'
+        style:
+          fillColor: '#8ea4b8'
+          fillOpacity: 0.5
+          stroke: false
+          radius: 3
       - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-8ea4b8.png
@@ -352,6 +394,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
+      - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} < 13'
+        style:
+          fillColor: '#b75ab8'
+          fillOpacity: 0.5
+          stroke: false
+          radius: 3
       - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-b75ab8.png
@@ -394,6 +442,12 @@ place_types:
           iconSize: [20, 20]
           iconAnchor: [10, 10]
 
+      - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} < 13'
+        style:
+          fillColor: '#ffd614'
+          fillOpacity: 0.5
+          stroke: false
+          radius: 3
       - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
           iconUrl: /static/css/images/markers/new/dot-ffd614.png
