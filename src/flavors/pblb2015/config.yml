@@ -28,7 +28,7 @@ map:
       lat: 33.8121
       lng: -118.1559
     zoom: 12
-    minZoom: 11
+    minZoom: 12
     maxZoom: 18
   layers:
     - url: http://{s}.tiles.mapbox.com/v3/openplans.jlb70f57/{z}/{x}/{y}.png
@@ -61,8 +61,11 @@ place_types:
       - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} < 13'
         style:
           fillColor: '#aa3c1e'
-          fillOpacity: 0.5
-          stroke: false
+          fillOpacity: 0.8
+          stroke: true
+          weight: 2
+          color: '#3F4F5C'
+          opacity: 0.8
           radius: 3
       - condition: '"{{location_type}}" === "culture" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
@@ -109,8 +112,11 @@ place_types:
       - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} < 13'
         style:
           fillColor: '#0f779e'
-          fillOpacity: 0.5
-          stroke: false
+          fillOpacity: 0.8
+          stroke: true
+          weight: 2
+          color: '#3F4F5C'
+          opacity: 0.8
           radius: 3
       - condition: '"{{location_type}}" === "education" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
@@ -157,8 +163,11 @@ place_types:
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} < 13'
         style:
           fillColor: '#7fccd9'
-          fillOpacity: 0.5
-          stroke: false
+          fillOpacity: 0.8
+          stroke: true
+          weight: 2
+          color: '#3F4F5C'
+          opacity: 0.8
           radius: 3
       - condition: '"{{location_type}}" === "environment" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
@@ -205,8 +214,11 @@ place_types:
       - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} < 13'
         style:
           fillColor: '#55a504'
-          fillOpacity: 0.5
-          stroke: false
+          fillOpacity: 0.8
+          stroke: true
+          weight: 2
+          color: '#3F4F5C'
+          opacity: 0.8
           radius: 3
       - condition: '"{{location_type}}" === "parks" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
@@ -253,8 +265,11 @@ place_types:
       - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} < 13'
         style:
           fillColor: '#ff78be'
-          fillOpacity: 0.5
-          stroke: false
+          fillOpacity: 0.8
+          stroke: true
+          weight: 2
+          color: '#3F4F5C'
+          opacity: 0.8
           radius: 3
       - condition: '"{{location_type}}" === "health" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
@@ -301,8 +316,11 @@ place_types:
       - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false && {{map.zoom}} < 13'
         style:
           fillColor: '#c4ed52'
-          fillOpacity: 0.5
-          stroke: false
+          fillOpacity: 0.8
+          stroke: true
+          weight: 2
+          color: '#3F4F5C'
+          opacity: 0.8
           radius: 3
       - condition: '"{{location_type}}" === "seniors" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
@@ -349,8 +367,11 @@ place_types:
       - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false && {{map.zoom}} < 13'
         style:
           fillColor: '#8ea4b8'
-          fillOpacity: 0.5
-          stroke: false
+          fillOpacity: 0.8
+          stroke: true
+          weight: 2
+          color: '#3F4F5C'
+          opacity: 0.8
           radius: 3
       - condition: '"{{location_type}}" === "streets" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
@@ -397,8 +418,11 @@ place_types:
       - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} < 13'
         style:
           fillColor: '#b75ab8'
-          fillOpacity: 0.5
-          stroke: false
+          fillOpacity: 0.8
+          stroke: true
+          weight: 2
+          color: '#3F4F5C'
+          opacity: 0.8
           radius: 3
       - condition: '"{{location_type}}" === "transit" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:
@@ -445,8 +469,11 @@ place_types:
       - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} < 13'
         style:
           fillColor: '#ffd614'
-          fillOpacity: 0.5
-          stroke: false
+          fillOpacity: 0.8
+          stroke: true
+          weight: 2
+          color: '#3F4F5C'
+          opacity: 0.8
           radius: 3
       - condition: '"{{location_type}}" === "youth" && {{layer.focused}} === false && {{map.zoom}} < 14'
         icon:

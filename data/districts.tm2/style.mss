@@ -16,15 +16,15 @@ maintain or invert existing value (light to dark) scale.
 @land:  #eee;
 
 @fill1: #fff;
-@fill2: #bbb;
-@fill3: #777;
+@fill2: #eee;
+@fill3: #888;
 @fill4: #000;
 
 @text: #777;
 
 @lborange: #F1AA36;
 
-Map { background-color: rgba(0,0,0,0.5); }
+Map { background-color: rgba(128,128,128,0.5); }
 
 /*
 By default, show council districts as lighter than the surrounding

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE Map[]>
-<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="rgba(0, 0, 0, 0.5)">
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="rgba(128, 128, 128, 0.5)">
 
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-118.1792,33.8602,12</Parameter>
+  <Parameter name="center">-118.1665,33.8121,12</Parameter>
   <Parameter name="description"><![CDATA[A monotone basemap that's easy to recolor.]]></Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
@@ -65,12 +65,12 @@
 </Style>
 <Style name="CouncilDistricts-outline" filter-mode="first">
   <Rule>
-    <LineSymbolizer stroke="#777777" stroke-width="1" comp-op="src" />
+    <LineSymbolizer stroke="#888888" stroke-width="1" comp-op="src" />
   </Rule>
 </Style>
 <Style name="CouncilDistricts" filter-mode="first">
   <Rule>
-    <PolygonSymbolizer fill="#bbbbbb" fill-opacity="0.5" />
+    <PolygonSymbolizer fill="#eeeeee" fill-opacity="0.5" />
   </Rule>
 </Style>
 <Layer name="CouncilDistricts"
@@ -84,34 +84,34 @@
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([COUNCIL_NU] = 9)</Filter>
-    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#bbbbbb" ><![CDATA[]]></TextSymbolizer>
+    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#eeeeee" ><![CDATA[]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([COUNCIL_NU] = 9)</Filter>
-    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#bbbbbb" ><![CDATA['District '+[COUNCIL_NU]]]></TextSymbolizer>
+    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#eeeeee" ><![CDATA['District '+[COUNCIL_NU]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([COUNCIL_NU] = 9)</Filter>
-    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#bbbbbb" ><![CDATA[[COUNCIL_NU]]]></TextSymbolizer>
+    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#eeeeee" ><![CDATA[[COUNCIL_NU]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([COUNCIL_NU] = 1)</Filter>
-    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#bbbbbb" ><![CDATA[]]></TextSymbolizer>
+    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#eeeeee" ><![CDATA[]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([COUNCIL_NU] = 1)</Filter>
-    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#bbbbbb" ><![CDATA['District '+[COUNCIL_NU]]]></TextSymbolizer>
+    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#eeeeee" ><![CDATA['District '+[COUNCIL_NU]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([COUNCIL_NU] = 1)</Filter>
-    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#bbbbbb" ><![CDATA[[COUNCIL_NU]]]></TextSymbolizer>
+    <TextSymbolizer size="14" face-name="Open Sans Semibold" halo-radius="1" halo-fill="#eeeeee" ><![CDATA[[COUNCIL_NU]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="CouncilDistrictCentroids"
