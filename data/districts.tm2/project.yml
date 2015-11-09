@@ -1,6 +1,6 @@
 _prefs: 
   mapid: openplans.9df7605d
-  saveCenter: false
+  saveCenter: true
 _properties: 
   bridge: 
     "group-by": layer
@@ -11,9 +11,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - 15.293
-  - 50.8476
-  - 4
+  - -118.1559
+  - 33.7991
+  - 11
 description: A monotone basemap that's easy to recolor.
 format: "png8:m=h"
 interactivity_layer: ''

@@ -25,15 +25,15 @@ map:
   geocode_field_label: _(Enter an address...)
   options:
     center:
-      lat: 33.87084
-      lng: -118.18002
-    zoom: 14
-    minZoom: 13
+      lat: 33.7991
+      lng: -118.1559
+    zoom: 11
+    minZoom: 10
     maxZoom: 18
   layers:
     - url: http://{s}.tiles.mapbox.com/v3/openplans.jlb70f57/{z}/{x}/{y}.png
       attribution: '&copy; OpenStreetMap contributors, CC-BY-SA. <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
-    - url: http://{s}.tiles.mapbox.com/v3/openplans.longbeach/{z}/{x}/{y}.png
+    - url: http://{s}.tiles.mapbox.com/v3/openplans.9df7605d/{z}/{x}/{y}.png
 
 
 place_types:

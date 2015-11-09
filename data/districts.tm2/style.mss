@@ -24,7 +24,7 @@ maintain or invert existing value (light to dark) scale.
 
 @lborange: #F1AA36;
 
-Map { background-color: rgba(0,0,0,0,5); }
+Map { background-color: rgba(0,0,0,0,0.7); }
 
 /*
 By default, show council districts as lighter than the surrounding
@@ -32,7 +32,7 @@ non-Long Beach area, but still grayed out.
 */
 #CouncilDistricts {
   polygon-fill: @fill2;
-  polygon-opacity: 0.3;
+  polygon-opacity: 0.5;
 }
 #CouncilDistricts::outline {
   line-color: @fill3;
