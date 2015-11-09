@@ -69,7 +69,7 @@
 var mapQuest_geocode = Shareabouts.Util.MapQuest.geocode;
 Shareabouts.Util.MapQuest.geocode = function(location, bounds, options) {
   // Since this is all Chicago-specific, go ahead and specify the city.
-  if (location.toLowerCase().indexOf('NYC') === -1) {
+  if (location.toLowerCase().indexOf('Long Beach') === -1) {
     location += ', Long Beach, CA'
   }
   return mapQuest_geocode.call(this, location, bounds, options);
