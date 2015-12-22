@@ -428,3 +428,8 @@ p.checkbox + p.select {
 .address-display {
   font-weight: bold;
 }
+
+.closed-district {
+  color: red;
+  display: block;
+}

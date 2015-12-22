@@ -26,7 +26,7 @@ Shareabouts.PlaceFormView.prototype.setLocation = function(locationData) {
     url: 'https://shareabouts-region-service.herokuapp.com/api/v1/longbeach/districts-2015?ll=' + locationData.latLng.lat + ',' + locationData.latLng.lng,
     success: function(data) {
       var participatingDistricts = [1, 9];
-      var closedDistricts = [39, 22, 8];
+      var closedDistricts = [9];
 
       if (_(participatingDistricts).contains(data['COUNCIL_NU'])) {
         $district.html(Handlebars.templates['district-string'](data));
