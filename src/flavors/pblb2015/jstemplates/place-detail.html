@@ -51,7 +51,6 @@
 </header>
 
 <section class="place-items">
-  {{#_}}
   {{#if shortlisted }}
     <p><strong>Location</strong>: {{ Location }}</p>
     <p><strong>Description</strong>: {{ description }}</p>
@@ -70,9 +69,9 @@
 
     {{ else }}
 
-      {{#if name }} <p>My project idea is: <span class="idea-title">{{ name }}</span></p> {{/if }}
+      {{#if name }} <p>{{#_}}My project idea is{{/_}}: <span class="idea-title">{{ name }}</span></p> {{/if }}
 
-      {{#if description }} <p>Details: {{ description }}</p> {{/if }}
+      {{#if description }} <p>{{#_}}Details{{/_}}: {{ description }}</p> {{/if }}
 
       {{# attachments }}
         <div class="place-item place-attachment-{{ name }}">
